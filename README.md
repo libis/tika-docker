@@ -10,6 +10,7 @@ There is a minimal version, which contains only Apache Tika and it's core depend
 * German
 * Italian
 * Spanish.
+* Dutch.
 
 To install more languages simply update the apt-get command to include the package containing the language you required, or include your own custom packs using an ADD command.
 

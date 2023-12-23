@@ -19,7 +19,7 @@ FROM ubuntu:jammy as base
 
 FROM base as fetch_tika
 
-ARG TIKA_VERSION=2.9.1.0
+ARG TIKA_VERSION=2.9.1
 ARG CHECK_SIG=true
 
 ENV NEAREST_TIKA_SERVER_URL="https://dlcdn.apache.org/tika/${TIKA_VERSION}/tika-server-standard-${TIKA_VERSION}.jar" \

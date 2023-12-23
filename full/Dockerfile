@@ -68,7 +68,7 @@ RUN set -eux \
         cabextract \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-ARG TIKA_VERSION
+ARG TIKA_VERSION=2.9.1
 ENV TIKA_VERSION=$TIKA_VERSION
 
 COPY --from=fetch_tika /tika-server-standard-${TIKA_VERSION}.jar /tika-server-standard-${TIKA_VERSION}.jar
